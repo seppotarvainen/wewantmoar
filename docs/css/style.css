@@ -107,6 +107,7 @@ body {
 .page {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 100dvh; /* supports mobile address bar */
 }
 
@@ -117,7 +118,6 @@ body {
   padding: clamp(16px, 3vw, 48px);
   scroll-snap-align: start;
   position: relative;
-  overflow-x: hidden;
 }
 
 .panel .content {
@@ -208,8 +208,40 @@ h1 {
   height: auto;
 }
 
+.comic-frame {
+  width: 850px;
+  background: white;
+  border: 2px solid var(--dark-yellow);
+  border-radius: 20px;
+  padding: 25px 15px;
+  box-shadow: 20px 20px rgba(0, 0, 0, .12);
+}
+
+.comic-frame button {
+  margin-left: 25px;
+}
+
+.comic-frame h1 {
+  font-size: 1.25em;
+  padding-left: 25px;
+}
+
+.comic-frame .description {
+  padding: 0 25px;
+  margin: 0;
+}
+
+.comic-frame p {
+  padding: 0;
+  margin: 0;
+}
+
+.comic-frame li {
+  margin-bottom: 0.25em;
+}
+
 .comic {
-  width: 100%;
+  width: 800px;
   height: auto;
 }
 
@@ -234,32 +266,25 @@ hr {
 button {
   font-family: "Winky Sans", sans-serif;
   font-size: 1em;
-  padding: 0.2rem 0.4rem;
+  padding: 0.4rem 0.8rem;
   margin: 0.2rem auto;
   border: solid 2px var(--near-black);
   border-radius: 4px;
 }
 
-.bg-yellow .chkbtn > span {
+.bg-yellow button {
   background-color: var(--yellow);
   color: inherit;
 }
 
-.bg-yellow .chkbtn:hover > span {
-  background-color: var(--dark-yellow);
-  color: var(--whitesmoke);
-}
-
-/* SELECTED state = :checked (maps to your .selected) */
-.bg-yellow .chkbtn > input:checked + span {
+.bg-yellow button:hover {
   background-color: var(--dark-yellow);
   color: var(--whitesmoke);
 }
 
 /* Keyboard focus ring on the real control */
-.bg-yellow .chkbtn > input:focus-visible + span {
-  outline: none;
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--dark-yellow) 40%, white 60%);
+.bg-yellow button:active {
+  background-color: var(--gray-ink);
 }
 
 

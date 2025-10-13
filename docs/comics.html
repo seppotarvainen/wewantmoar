@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WeWantMoar - Comics</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeWantMoar - Comics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
 
-  <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body class="bg-yellow">
 <main>
-  <section class="panel" data-layout="full">
-    <div class="feature-box">
-      <img src="img/comics/0009_the_beatles.png" class="comic" />
-    </div>
-  </section>
+    <section class="panel" data-layout="full">
+        <div class="comic-frame">
+            <h1>WeWantMoar Comic #1</h1>
+            <img src="img/comics/0009_the_beatles.png" class="comic" alt="Three panel comic strip"/>
+
+            <div class="transcript visually-hidden" id="transcription">
+                <h1>Transcription</h1>
+                <p class="description">Polar bear named Mr. Crawley and the narrator having a conversation:</p>
+                <ol>
+                    <li>
+                        <p><strong>Crawley:</strong> Did you know that Lennon and McCartney went to anger management?</p>
+                    </li>
+                    <li>
+                        <p><strong>Narrator:</strong> No, really?</p>
+                    </li>
+                    <li>
+                        <p><strong>Crawley:</strong> Yeah. Now they beat less.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <button id="toggle-transcript">Show transcription</button>
+        </div>
+    </section>
 </main>
 </body>
+<script>
+    const transcript = document.getElementById('transcription');
+    const toggleBtn = document.getElementById('toggle-transcript')
+    let isVisible = false;
+
+    function toggle() {
+        isVisible = !isVisible;
+        if (isVisible) {
+            toggleBtn.textContent = 'Hide transcription'
+            transcript.className = 'transcript'
+        } else {
+            toggleBtn.textContent = 'Show transcription'
+            transcript.className = 'transcript visually-hidden'
+        }
+    }
+
+    document.getElementById('toggle-transcript').addEventListener('click', () => {
+        toggle();
+    })
+</script>
 </html>
