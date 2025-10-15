@@ -84,6 +84,7 @@ textarea {
   --dark-salmon: #81413a;
   --yellow: #e6dd20;
   --dark-yellow: #777701;
+  --yellow-alpha: rgba(230, 221, 32, 0.95);
 
   --nav-h: 56px;
 }
@@ -276,10 +277,10 @@ hr {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(230, 221, 32, 0.9);
+  background: var(--yellow-alpha);
   height: var(--nav-h);
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto; /* left | center | right */
+  grid-template-columns: 1fr auto 1fr; /* left | center | right */
   align-items: center;
   max-width: 920px;
   margin: 0 auto;
@@ -300,6 +301,7 @@ hr {
 }
 
 .navbar ul {
+  margin-top: 0;
   padding-left: 0;
 }
 
@@ -323,31 +325,35 @@ hr {
 
 /* Mobile */
 @media (max-width: 700px) {
+  /* 1) Two rows: row1 = bar, row2 = dropdown */
+  .navbar {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+  }
+
+  /* Row 1: pin items so they never move */
+  .nav-brand    { grid-column:1; grid-row:1; justify-self:start; position:static; left:auto; }
+  .nav-toggle   { grid-column:2; grid-row:1; justify-self:start; display: block; }
+  .nav-waitlist { grid-column:3; grid-row:1; justify-self:end; }
+
+  /* Row 2: dropdown spans full width under row1 */
   .nav-links {
+    grid-column: 1 / -1;
+    grid-row: 2;
     display: none;
     flex-direction: column;
     width: 100%;
+    padding: 2em;
+    gap: 1em;
+    text-align: center;
+    background: var(--yellow-alpha);
+    border-bottom: 4px solid var(--dark-yellow);
   }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-toggle {
-    display: block;
-  }
+  .nav-links.active { display: flex; }
 }
 
-/* Optional: responsive tweaks for very small viewports */
-@media (max-width: 560px) {
-  :root {
-    --frame: 14px;
-    --radius: 18px;
-  }
 
-  .camera {
-    width: 12px;
-    height: 12px;
-  }
-}
 
 button {
   font-family: "Winky Sans", sans-serif;
