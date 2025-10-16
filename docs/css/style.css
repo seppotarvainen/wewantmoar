@@ -147,7 +147,6 @@ body {
   border-radius: 20px;
   padding: clamp(20px, 4vw, 40px);
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
-  text-align: center;
 }
 
 h1, h2 {
@@ -184,7 +183,7 @@ a:hover {
   font-size: 6em;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
 
@@ -231,6 +230,8 @@ a:hover {
   height: auto;
 }
 
+/* COMIC */
+
 .comic-frame {
   width: 850px;
   background: white;
@@ -267,6 +268,21 @@ a:hover {
   width: 800px;
   height: auto;
 }
+
+/* END COMIC */
+
+/* ABOUT */
+
+.text-left {
+  text-align: left !important;
+}
+
+.oversize-panel {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* END ABOUT */
 
 hr {
   border: 1px solid var(--dark-yellow);
