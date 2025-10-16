@@ -97,6 +97,9 @@ html, body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -107,9 +110,7 @@ body {
 }
 
 .page {
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-  overflow-x: hidden;
+
   height: 100dvh; /* supports mobile address bar */
 }
 
@@ -282,17 +283,17 @@ hr {
   display: grid;
   grid-template-columns: 1fr auto 1fr; /* left | center | right */
   align-items: center;
-  max-width: 920px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .nav-brand {
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .nav-waitlist {
   justify-self: end;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 .navbar a {
@@ -304,7 +305,6 @@ hr {
   margin-top: 0;
   padding-left: 0;
 }
-
 
 .nav-links {
   list-style: none;
@@ -319,6 +319,29 @@ hr {
   font-size: 1.6em;
   color: white;
   cursor: pointer;
+}
+
+button, a.nav-waitlist {
+  font-family: "Winky Sans", sans-serif;
+  font-size: 1em;
+  padding: 0.4rem 0.8rem;
+  border: solid 2px var(--near-black) !important;
+  border-radius: 4px;
+}
+
+.bg-yellow button, .bg-yellow a.nav-waitlist {
+  background-color: var(--yellow);
+  color: inherit;
+}
+
+.bg-yellow button:hover, .bg-yellow a:hover.nav-waitlist {
+  background-color: var(--dark-yellow);
+  color: var(--whitesmoke);
+}
+
+/* Keyboard focus ring on the real control */
+.bg-yellow button:active {
+  background-color: var(--gray-ink);
 }
 
 
@@ -352,33 +375,6 @@ hr {
   }
   .nav-links.active { display: flex; }
 }
-
-
-
-button {
-  font-family: "Winky Sans", sans-serif;
-  font-size: 1em;
-  padding: 0.4rem 0.8rem;
-  margin: 0.2rem auto;
-  border: solid 2px var(--near-black);
-  border-radius: 4px;
-}
-
-.bg-yellow button {
-  background-color: var(--yellow);
-  color: inherit;
-}
-
-.bg-yellow button:hover {
-  background-color: var(--dark-yellow);
-  color: var(--whitesmoke);
-}
-
-/* Keyboard focus ring on the real control */
-.bg-yellow button:active {
-  background-color: var(--gray-ink);
-}
-
 
 /* ==========================================================================
    Helper classes
