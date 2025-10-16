@@ -315,7 +315,8 @@ hr {
 .nav-toggle {
   display: none;
   background: none;
-  border: none;
+  border: none !important;
+  margin: 0 auto;
   font-size: 1.6em;
   color: white;
   cursor: pointer;
@@ -493,6 +494,16 @@ button, a.nav-waitlist {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .nav-brand {
+    margin-left: 20px;
+  }
+
+  .nav-waitlist {
+    justify-self: end;
+    margin-right: 20px;
+  }
+
 
 }
 
