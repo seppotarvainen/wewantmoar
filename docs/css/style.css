@@ -143,7 +143,6 @@ body {
 .panel[data-layout="full"] .feature-box {
   width: min(900px, 92vw);
   background: white;
-  border: 2px solid var(--dark-yellow);
   border-radius: 20px;
   padding: clamp(20px, 4vw, 40px);
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
@@ -235,7 +234,6 @@ a:hover {
 .comic-frame {
   width: 850px;
   background: white;
-  border: 2px solid var(--dark-yellow);
   border-radius: 20px;
   padding: 25px 15px;
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
