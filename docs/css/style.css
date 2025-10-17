@@ -110,17 +110,20 @@ body {
 }
 
 .page {
-
   height: 100dvh; /* supports mobile address bar */
 }
 
 .panel {
-  min-height: calc(100svh);
+  min-height: calc(100vh);
   display: grid;
   place-items: center;
   margin: 6vh 0;
   scroll-snap-align: start;
   position: relative;
+}
+
+.comic-page .panel {
+  min-height: 50vh;
 }
 
 .panel .content {
@@ -244,6 +247,9 @@ h1 {
 }
 
 /* COMIC */
+.comic-page {
+  overflow-x: auto !important;
+}
 
 .comic-frame {
   width: 850px;
