@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WeWantMoar - Comics</title>
+    <title>WeWantMoar - Comics - Anger Management (2025/2)</title>
     <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="">
 
@@ -23,12 +23,25 @@
           rel="stylesheet">
 
     <link rel="manifest" href="../site.webmanifest">
+    <script src="../js/comic.js"></script>
 </head>
 <body class="bg-yellow">
+<nav class="navbar">
+    <div class="nav-brand">
+        <a href="../index.html">WeWantMoar</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="2025_01.html">Comics</a></li>
+    </ul>
+    <a href="../index.html#waitlist" class="nav-waitlist">Join waitlist</a>
+</nav>
 <main>
     <section class="panel" data-layout="full">
-        <div class="comic-frame">
-            <h1>WeWantMoar Comic #1</h1>
+        <div class="comic-frame bg-white">
+            <h1>WeWantMoar Comic - Anger Management</h1>
             <img src="../img/comics/0002_anger_management.png" class="comic" alt="Three panel comic strip"/>
 
             <div class="transcript visually-hidden" id="transcription">
@@ -47,30 +60,15 @@
                 </ol>
             </div>
 
-            <button id="toggle-transcript">Show transcription</button>
-
+            <div class="comic-nav">
+                <div>
+                    <button id="toggle-transcript">Show transcription</button>
+                </div>
+                <a href="2025_01.html">&larr; Prev</a>
+                <span>Done!</span>
+            </div>
         </div>
     </section>
 </main>
 </body>
-<script>
-    const transcript = document.getElementById('transcription');
-    const toggleBtn = document.getElementById('toggle-transcript')
-    let isVisible = false;
-
-    function toggle() {
-        isVisible = !isVisible;
-        if (isVisible) {
-            toggleBtn.textContent = 'Hide transcription'
-            transcript.className = 'transcript'
-        } else {
-            toggleBtn.textContent = 'Show transcription'
-            transcript.className = 'transcript visually-hidden'
-        }
-    }
-
-    document.getElementById('toggle-transcript').addEventListener('click', () => {
-        toggle();
-    })
-</script>
 </html>

@@ -131,6 +131,10 @@ body {
   background: var(--yellow);
 }
 
+.bg-white {
+  background: white;
+}
+
 .col-left, .col-right {
   min-width: 10%;
 }
@@ -142,7 +146,6 @@ body {
 /* FULLWIDTH layout: centered feature box */
 .panel[data-layout="full"] .feature-box {
   width: min(900px, 92vw);
-  background: white;
   border-radius: 20px;
   padding: clamp(20px, 4vw, 40px);
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
@@ -158,15 +161,26 @@ h1 {
 }
 
 
-a {
+.bg-yellow a {
   color: var(--near-black);
   text-decoration:none;
   border-bottom: var(--near-black) solid 2px;
 }
-a:hover {
+.bg-yellow a:hover {
   border-bottom: 0;
   color: #62028a;
   border-bottom: #62028a solid 2px;
+}
+
+.bg-white a {
+  color: #62028a;
+  text-decoration:none;
+  border: none;
+}
+.bg-white a:hover {
+  border-bottom: 0;
+  color: #62028a;
+  text-decoration: underline;
 }
 
 .navbar a {
@@ -233,7 +247,6 @@ a:hover {
 
 .comic-frame {
   width: 850px;
-  background: white;
   border-radius: 20px;
   padding: 25px 15px;
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
@@ -246,6 +259,11 @@ a:hover {
 .comic-frame h1 {
   font-size: 1.25em;
   padding-left: 25px;
+}
+
+.comic-frame .comic-nav {
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 0.5fr;
 }
 
 .comic-frame .description {
