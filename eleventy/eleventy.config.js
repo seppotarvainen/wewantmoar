@@ -1,6 +1,7 @@
 export default function (eleventyConfig) {
     // Output directory: _site
 
+    eleventyConfig.addPassthroughCopy({ "static": "/" });
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
@@ -27,5 +28,11 @@ export default function (eleventyConfig) {
         const i = collection.findIndex((p) => p.url === url);
         return i >= 0 && i < collection.length - 1 ? collection[i + 1].url : null;
     });
+
+    return {
+        dir: {
+            output: "../docs"
+        }
+    }
 
 };

@@ -258,29 +258,28 @@ h1 {
   box-shadow: 20px 20px rgba(0, 0, 0, .12);
 }
 
-.comic-frame button {
-  margin-left: 25px;
+.comic-title {
+  padding-left: 25px;
 }
 
 .comic-frame h1 {
   font-size: 1.25em;
-  padding-left: 25px;
 }
+
+.comic-frame button {
+  margin-left: 25px;
+}
+
 
 .comic-frame .comic-nav {
   display: grid;
   grid-template-columns: 3fr 0.5fr 0.5fr;
 }
 
-.comic-frame .description {
-  padding: 0 25px;
-  margin: 0;
+.transcript {
+  padding-left: 25px;
 }
 
-.comic-frame p {
-  padding: 0;
-  margin: 0;
-}
 
 .comic-frame li {
   margin-bottom: 0.25em;
