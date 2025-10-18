@@ -1,3 +1,5 @@
 .idea
 script
 *.DS_Store
+eleventy/node_modules
+eleventy/_site

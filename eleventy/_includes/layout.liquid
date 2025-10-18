@@ -1,0 +1,42 @@
+---
+title: WeWantMoar
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+
+    <script src="/js/main.js" defer></script>
+    {{ head  }}
+  </head>
+  <body class="bg-yellow">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="/index.html">WeWantMoar</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      {%- for item in site.nav -%}
+      <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+      {%- endfor -%}
+    </ul>
+    <a href="/index.html#waitlist" class="nav-waitlist">Join waitlist</a>
+  </nav>
+    {{ content }}
+  </body>
+</html>

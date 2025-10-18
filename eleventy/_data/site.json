@@ -1,0 +1,8 @@
+{
+  "title": "WeWantMoar",
+  "nav": [
+    { "label": "Home",  "href": "/index.html" },
+    { "label": "About", "href": "/about.html" },
+    { "label": "Comics","href": "/comics/2025_01.html" }
+  ]
+}
