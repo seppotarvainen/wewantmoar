@@ -13,10 +13,7 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
         <h1 class="title">WeWantMoar</h1>
         <h2>Home of the events you love.</h2>
         <p>Coming soon. Underground events included*</p>
-        <p><sub>*the ones you tell us.</sub></p>
-      </div>
-      <div class="col-right">
-        &ensp;
+        <p><sub>*the ones you tell us to.</sub></p>
       </div>
     </div>
   </section>
@@ -86,34 +83,42 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
       <div class="feature-box bg-white text-center">
         <h1>Join the pack. Get Moar.</h1>
         <p>
-          Sign up for the newsletter and be one of the chosen ones! We only have 500 spots in total!<sup>*</sup>
+          Sign up for the newsletter and be one of the chosen ones! There's only 500 spots in total!<sup>*</sup>
         </p>
         <div class="ml-embedded" data-form="nrh6xf"></div>
-
       </div>
       <p class="w-900 text-center">
         <sub>
-          *Because our free mailing list provider only allows 500 subscribers.
+          *Don't miss out!
         </sub>
       </p>
     </div>
 
   </section>
-    <section class="panel" data-layout="full">
-      <h1>Still here?</h1>
-      <p class="w-900 text-center">
-        While you're waiting, meet Mr. Crawley and check <a href="comics/2025_01.html">here for some amazing comics.</a>*
-      </p>
-      <sub class="text-center">
-        *After that you've seen everything we have to show right now.
-      </sub>
-      <footer class="footer text-center w-900">
-        <hr>
-        <p>© 2025 WeWantMoar. All rights reserved.</p>
+    <section class="panel" data-layout="two-col">
+    <div class="content two-col">
+      <img src="img/comics.svg"
+           class="bear"
+           alt="Polar bear holding a frame.">
+      <div class="col-right">
+        <h1>Still here?</h1>
         <p>
-          Artwork © WeWantMoar or used with permission.
+         While you're waiting, meet Mr. Crawley and check <a href="comics/2025_01.html">here for some amazing comics.</a>*
         </p>
-      </footer>
+        <p>
+          <sub class="text-center">
+            *After that you've seen everything we have to show right now.
+          </sub>
+        </p>
+      </div>
+    </div>
+          <footer class="footer text-center w-900">
+            <hr>
+            <p>© 2025 WeWantMoar. All rights reserved.</p>
+            <p>
+              Artwork © WeWantMoar or used with permission.
+            </p>
+          </footer>
     </section>
 </main>
 

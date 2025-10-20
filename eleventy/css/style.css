@@ -97,7 +97,6 @@ html, body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -117,7 +116,6 @@ body {
   min-height: calc(100vh);
   display: grid;
   place-items: center;
-  margin: 6vh 0;
   scroll-snap-align: start;
   position: relative;
 }
@@ -241,7 +239,6 @@ h1 {
 }
 
 .bear-title {
-  padding-top: var(--nav-h);
   position: relative;
   height: auto;
 }
