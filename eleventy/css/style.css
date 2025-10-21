@@ -116,7 +116,6 @@ body {
   min-height: calc(100vh);
   display: grid;
   place-items: center;
-  scroll-snap-align: start;
   position: relative;
 }
 
@@ -306,6 +305,12 @@ hr {
   border: 1px solid var(--dark-yellow);
 }
 
+.footer {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 4em;
+}
+
 /* Navigation */
 .navbar {
   font-family: "Winky Sans", sans-serif;
@@ -414,6 +419,11 @@ button, a.nav-waitlist {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.content > p:has(> img) {
+  display: contents;   /* children (the <img>) become direct flex items */
+  margin: 0;
+}
 
 /*
  * Hide visually and from screen readers
