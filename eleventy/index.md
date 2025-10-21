@@ -85,7 +85,7 @@ No accounts, no registration, no bull*
       <div class="feature-box bg-white text-center">
         <h1>Join the pack. Get Moar.</h1>
         <p>
-          Sign up for the newsletter and be one of the chosen ones! There's only 500 spots in total!<sup>*</sup>
+          Join our waitlist and be one of the chosen ones! There's only 500 spots in total!<sup>*</sup>
         </p>
         <div class="ml-embedded" data-form="nrh6xf"></div>
       </div>
