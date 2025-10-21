@@ -247,6 +247,10 @@ h1 {
   overflow-x: auto !important;
 }
 
+.comic-page .panel, .oversize-panel {
+  margin: 3em 0;
+}
+
 .comic-frame {
   width: 850px;
   border-radius: 20px;
@@ -292,11 +296,6 @@ h1 {
 
 .text-left {
   text-align: left !important;
-}
-
-.oversize-panel {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 /* END ABOUT */
