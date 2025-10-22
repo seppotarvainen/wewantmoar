@@ -11,9 +11,9 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
              class="bear-title"
              alt="Polar bear stage diving">
         <h1 class="title">WeWantMoar</h1>
-        <h2>Home of the events you love.</h2>
-        <p>Coming soon. Underground events included*</p>
-        <p><sub>*the ones you tell us to.</sub></p>
+        <h2>Live out loud. No ragrets.</h2>
+        <p>All of your music events in your pocket. Underground events included*</p>
+        <p><sub>*the ones you tell us about.</sub></p>
       </div>
     </div>
   </section>
@@ -26,7 +26,7 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
 
 {% col %}
 
-# Moar events!
+# Moar events.
     
 ## Simplistic discovery of events.<br>For your unique taste.
 
