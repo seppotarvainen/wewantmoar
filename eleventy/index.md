@@ -131,8 +131,3 @@ While you're waiting, meet Mr. Crawley and [check here for some amazing comics](
   (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
   ml('account', '1858998');
 </script>
-
-<!-- Goat counter -->
-<script data-goatcounter="https://wewantmoar.goatcounter.com/count"
-        async
-        src="//gc.zgo.at/count.js"></script>
