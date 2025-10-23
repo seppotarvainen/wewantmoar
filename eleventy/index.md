@@ -11,7 +11,7 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
              class="bear-title"
              alt="Polar bear stage diving">
         <h1 class="title">WeWantMoar</h1>
-        <h2>Live out loud. No ragrets.</h2>
+        <h2 class="slogan">Live out loud. No ragrets.</h2>
         <p>All of your music events in your pocket. Underground events included*</p>
         <p><sub>*the ones you tell us about.</sub></p>
       </div>
@@ -28,7 +28,7 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
 
 # Moar events.
     
-## Simplistic discovery of events.<br>For your unique taste.
+## Simplistic discovery of events. For your unique taste.
 
 We gather events from various of sources and put them into a same jar.
 If we ever miss a thing, let us know and you'll be generously rewarded*
@@ -69,6 +69,8 @@ when something happens*
 {% col %}
 
 # Moar privacy.
+
+## Your device, your data.
 
 The information you provide stays on your device. Things we need to know are anonymous and protected.
 No accounts, no registration, no bull*
