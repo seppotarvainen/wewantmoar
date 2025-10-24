@@ -1,6 +1,7 @@
 ---
 layout: layout.liquid
 title: WeWantMoar - Simplistic Event Discovery - Coming Soon
+head: '<script src="/js/counter.js" defer></script>'
 ---
 
 <main class="page">
@@ -11,12 +12,37 @@ title: WeWantMoar - Simplistic Event Discovery - Coming Soon
              class="bear-title"
              alt="Polar bear stage diving">
         <h1 class="title">WeWantMoar</h1>
-        <h2 class="slogan">Live out loud. No ragrets.</h2>
+        <h2 class="slogan">Live out <strong>loud.</strong> No <strong>ragrets.</strong></h2>
         <p>All of your music events in your pocket. Underground events included*</p>
         <p><sub>*the ones you tell us about.</sub></p>
+        <span>&darr;</span>
       </div>
     </div>
   </section>
+
+  <div class="content text-center w-900 align-center">
+     <h2>Coming soon...</h2>
+     <div class="counter">
+       <div></div>
+       <div>
+         <div class="counter-title">Days</div>
+         <div class="counter-value" id="counter-days">-</div>
+       </div>
+       <div>
+         <div class="counter-title">Hours</div>
+         <div class="counter-value" id="counter-hours">-</div>
+       </div>
+       <div>
+          <div class="counter-title">Minutes</div>
+          <div class="counter-value" id="counter-minutes">-</div>
+       </div>
+       <div>
+          <div class="counter-title">Seconds</div>
+          <div class="counter-value" id="counter-seconds">-</div>
+       </div>
+       <div></div>
+     </div>
+  </div>
 
 [//]: # (--- Moar events section ---)
 
@@ -37,7 +63,6 @@ If we ever miss a thing, let us know and you'll be generously rewarded*
 
 {% endcol %}
 {% endpanel %}
-
 
 [//]: # (--- Moar time section ---)
 
