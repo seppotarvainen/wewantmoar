@@ -1,3 +1,7 @@
+---
+title: WeWantMoar - Blogs - You deserve moar
+---
+
 # You deserve moar
 
 Everyone hates it. Missing out, I mean.

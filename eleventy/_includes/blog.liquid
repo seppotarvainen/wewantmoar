@@ -1,0 +1,37 @@
+---
+layout: layout.liquid
+title: Blogs
+---
+{%- assign prev_url = collections.blog | prevUrl: page.url -%}
+{%- assign next_url = collections.blog | nextUrl: page.url -%}
+
+<main class="page text-left">
+    <div class="panel" data-layout="full">
+        <div class="feature-box oversize-panel bg-white">
+            {{ content }}
+
+            <div class="neighbor-nav mt-4">
+                {%- if prev_url -%}
+                    <a href="{{ prev_url }}">&larr; Previous</a>
+                {%- else -%}
+                    <span>&ensp;</span>
+                {%- endif -%}
+
+                <div></div>
+
+                {%- if next_url -%}
+                    <a href="{{ next_url }}">Next &rarr;</a>
+                {%- else -%}
+                    <span>That's the last one!</span>
+                {%- endif -%}
+            </div>
+        </div>
+        <footer class="footer text-center w-900">
+            <hr>
+            <p>© 2025 WeWantMoar. All rights reserved.</p>
+            <p>
+                Artwork © WeWantMoar or used with permission.
+            </p>
+        </footer>
+    </div>
+</main>

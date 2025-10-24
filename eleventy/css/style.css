@@ -301,6 +301,11 @@ h1 {
   grid-template-columns: 3fr 0.5fr 0.5fr;
 }
 
+.neighbor-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
 .transcript {
   padding-left: 25px;
 }
@@ -408,6 +413,20 @@ button, a.nav-waitlist {
   background-color: var(--gray-ink);
 }
 
+/* UTILS */
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
 
 
 /* Mobile */

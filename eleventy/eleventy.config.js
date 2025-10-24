@@ -2,8 +2,6 @@ import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 
 export default function (eleventyConfig) {
-    // Output directory: _site
-
     eleventyConfig.addPassthroughCopy({ "static": "/" });
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("css");
@@ -28,16 +26,9 @@ export default function (eleventyConfig) {
         "col",
         (content, extra = "") => `<div class="col ${extra}">${content}</div>`
     );
-    // Comics
 
-    eleventyConfig.addCollection("comics", (collectionApi) => {
-        const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
-        return collectionApi.getFilteredByTag("comics").sort((a, b) =>
-            collator.compare(a.fileSlug, b.fileSlug)
-        );
-    });
+    // Collections - Neighbor URL filters
 
-    // Comics - Neighbor URL filters
     eleventyConfig.addFilter("prevUrl", (collection, url) => {
         const i = collection.findIndex((p) => p.url === url);
         return i > 0 ? collection[i - 1].url : null;

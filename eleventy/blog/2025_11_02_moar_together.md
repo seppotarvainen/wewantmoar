@@ -1,3 +1,7 @@
+---
+title: WeWantMoar - Blogs - Moar together
+---
+
 # Moar together
 
 We're concert-goers that simply enjoy the concert-going part of the whole experience. We're not fans of figuring out
